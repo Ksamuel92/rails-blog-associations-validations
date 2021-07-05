@@ -12,6 +12,8 @@ Rails.application.configure do
   # preloads Rails for running tests, you may have to set it to true.
   config.eager_load = false
 
+  config.assets.debug = false
+
   # Configure public file server for tests with Cache-Control for performance.
   config.public_file_server.enabled = true
   config.public_file_server.headers = {
@@ -36,6 +38,8 @@ Rails.application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  config.assets.unknown_asset_fallback = true
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
